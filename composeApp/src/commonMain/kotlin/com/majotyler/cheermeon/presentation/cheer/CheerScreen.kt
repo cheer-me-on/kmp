@@ -20,6 +20,7 @@ fun CheerScreen(
 
     CheerContent(
         cheerText = state.value.cheerText,
+        pendingCheer = state.value.pendingCheer,
         onEvent = { viewModel.onEvent(it) },
     )
 }
@@ -27,6 +28,7 @@ fun CheerScreen(
 @Composable
 private fun CheerContent(
     cheerText: String,
+    pendingCheer: Boolean,
     onEvent: (CheerViewEvent) -> Unit
 ) {
     Column(
@@ -37,6 +39,7 @@ private fun CheerContent(
         verticalArrangement = Arrangement.Center,
     ) {
         TextField(
+            enabled = pendingCheer.not(),
             value = cheerText,
             onValueChange = {
                 onEvent(
@@ -45,6 +48,7 @@ private fun CheerContent(
             }
         )
         Button(
+            enabled = pendingCheer.not(),
             onClick = { onEvent(CheerViewEvent.ClickedSendCheerText) },
         ) {
             Text(
@@ -52,5 +56,4 @@ private fun CheerContent(
             )
         }
     }
-
 }
