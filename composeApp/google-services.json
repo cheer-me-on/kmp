@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "981824077043",
+    "project_id": "cheer-me-on",
+    "storage_bucket": "cheer-me-on.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:981824077043:android:66dfdcacb160d4eee90b86",
+        "android_client_info": {
+          "package_name": "com.majotyler.cheermeon"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5KlntEZrxXweeicENMQEUg8vG_0PZzzw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
