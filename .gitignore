@@ -120,3 +120,6 @@ $RECYCLE.BIN/
 # --- Kotlin/Native ---
 *.klib/
 .konan/
+
+# Kotlin build caches
+.kotlin/
